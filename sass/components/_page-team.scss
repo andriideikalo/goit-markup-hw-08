@@ -1,4 +1,4 @@
-@media screen and (min-width:480px) {
+
     .team {
             background-color: $colorBackground;
     
@@ -14,6 +14,11 @@
             // &__list {
             //     display: flex;
             // }
+
+           &__foto {
+           width: 450px;
+              margin: 0 auto;
+            }
     
             &__person {
                 font-weight: 500;
@@ -39,17 +44,21 @@
                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
                 border-radius: 0px 0px 4px 4px;
                 background: $primaryColor;
+              
     
-                &:not(:last-child) {
-                    margin-right: 30px;
-                }
+                // &:not(:last-child) {
+                //     margin-right: 30px;
+                // }
             }
     
             &__link {
                 display: flex;
+                // display: inline-block;
                 margin: 0 auto;
-                width: 206px;
+                // width: 206px;
                 gap: 10px;
+                justify-content: center;
+                    align-items: center;
             }
     
             &__social {
@@ -59,7 +68,7 @@
                 border: none;
                 border-radius: 50%;
                 cursor: pointer;
-                display: flex;
+                // display: flex;
                 align-items: center;
                 justify-content: center;
                 transition-property: background-color, color, filter;
@@ -82,7 +91,7 @@
                 cursor: pointer;
             }
         }
-}
+@media screen and (min-width: 480px) {}
 
 @media screen and (min-width:1200px) {
     .team {
@@ -100,7 +109,9 @@
             &__list {
                 display: flex;
             }
-    
+            &__foto {
+                width: 270px;
+            }
             &__person {
                 font-weight: 500;
                 font-size: 16px;

@@ -1,5 +1,6 @@
-@media screen and (min-width: 480px) {
+
     .advantages {
+   
             &__title {
                 font-weight: 700;
                 font-size: $primaryFontSize;
@@ -7,6 +8,7 @@
                 text-transform: uppercase;
                 color: $colorSecondaryText;
                 margin-bottom: 10px;
+            text-align: center;
             }
     
             // &__item:not(:last-child) {
@@ -15,29 +17,32 @@
     
             // &__list {
             //     display: flex;
+                  
             // }
-    
+      
             &__content {
                 line-height: 24px;
-                width: 450px;
+                max-width: 450px;
+                margin: 0 auto;
             }
     
             &__group {
                 margin-bottom: 30px;
                 background: $colorBackground;
                 border-radius: 4px;
-                width: 450px;
+                max-width: 450px;
                 height: 120px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin: 0 auto;
             }
     
             &__icon {
                 object-fit: cover;
             }
         }
-}
+@media screen and (min-width: 480px) {}
 @media screen and (min-width: 1200px) {
 .advantages {
 &__title {
