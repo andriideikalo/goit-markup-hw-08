@@ -1,7 +1,7 @@
 
 
     .client {
-        margin: 0 auto;
+      
             &__title {
                 font-weight: 700;
                 font-size: 36px;
@@ -17,17 +17,20 @@
                 flex-wrap: wrap;
                 // max-width: 450px;
                 // gap: 30px;
-                // align-items: center;
-                // justify-content: center;
-                // margin: 0 auto;    
+                align-items: center;
+                justify-content: center;
+                // margin-bottom: -15px;    
             }
             &__item {
-             flex-basis: calc((100% - 4 * 15px) / 2);
+            //  flex-basis: calc((100% - 4 * 15px) / 2);
+             margin-right: 30px;
              margin-bottom: 30px;
-            
             }
+             &__item:nth-child(even) {
+             margin-right: 0;
+                         }
             &__link {
-                max-width: 210px;
+                width: 210px;
                 height: 92px;
                 border: 1px solid $colorIcon;
                 color: $colorIcon;
