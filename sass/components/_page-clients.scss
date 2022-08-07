@@ -1,8 +1,8 @@
 
 
     .client {
-            max-width: 480px;
-            margin: 0 auto;
+            // max-width: 480px;
+            // margin: 0 auto;
             &__title {
                 font-weight: 700;
                 font-size: 36px;
@@ -16,20 +16,20 @@
             &__list {
                 display: flex;
                 flex-wrap: wrap;
-                // max-width: 450px;
+                width: 480px;
                 // gap: 30px;
                 align-items: center;
                 justify-content: center;
-                // margin-bottom: -15px;    
+                margin-bottom: -30px;   
+                margin: 0 auto; 
             }
             &__item {
-            //  flex-basis: calc((100% - 4 * 15px) / 2);
-             margin-right: 30px;
+         
+             flex-basis: calc(100% / 2);
+           
              margin-bottom: 30px;
             }
-             &__item:nth-child(even) {
-             margin-right: 0;
-                         }
+            
             &__link {
                 width: 210px;
                 height: 92px;

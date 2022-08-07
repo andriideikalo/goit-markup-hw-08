@@ -199,6 +199,7 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  right: 10px;
 }
 .menu__button:focus, .menu__button:focus use {
   outline: none;
@@ -819,7 +820,6 @@ body {
 }
 .team {
   background-color: #f5f4fa;
-  max-width: 480px;
 }
 .team__title {
   font-weight: 700;
@@ -1272,10 +1272,6 @@ body {
     color: #757575;
   }
 }
-.client {
-  max-width: 480px;
-  margin: 0 auto;
-}
 .client__title {
   font-weight: 700;
   font-size: 36px;
@@ -1291,19 +1287,20 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 480px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: -30px;
+  margin: 0 auto;
 }
 .client__item {
-  margin-right: 30px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   margin-bottom: 30px;
-}
-.client__item:nth-child(even) {
-  margin-right: 0;
 }
 .client__link {
   width: 210px;
@@ -1393,7 +1390,6 @@ body {
   position: relative;
   background-color: #2f303a;
   padding: 60px 0px;
-  max-width: 480px;
 }
 .footer__list--contact {
   margin-bottom: 60px;
