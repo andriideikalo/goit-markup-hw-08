@@ -1,8 +1,14 @@
 
 
     .header {
-            border-bottom: 1px solid $colorBorder;
+            // border-bottom: 1px solid $colorBorder;
+            width: 480px;
     
+            &__container {
+            padding: 16px 15px;
+            justify-content: center;
+            max-width: 480px;
+            }
             &__link {
                 font-family: "Raleway", sans-serif;
                 font-weight: 700;
@@ -10,6 +16,7 @@
                 line-height: 1.19;
                 color: $colorSecondaryText;
                 // margin-right: 93px;
+                position: relative;
             }
     
             &__logo {
@@ -17,9 +24,9 @@
             }
     
             &__linkPages {
-                position: relative;
+                // position: relative;
                          font-weight: 500;
-                font-size: $primaryFontSize;
+                font-size: 40px;
                 line-height: 1.14;
                 letter-spacing: 0.02em;
                 color: $colorSecondaryText;
@@ -53,11 +60,12 @@
                 // display: flex;
                 // align-items: center;
                 font-style: normal;
-                font-size: $primaryFontSize;
-                line-height: 1.14;
+                font-size: 40px;
+                line-height: 1.17;
                 letter-spacing: 0.02em;
                 color: $colorPrimaryText;
-                padding: 32px 0;
+                // padding: 32px 0;
+              
                 transition-property: color;
                 transition-duration: 250ms;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,12 +74,20 @@
                 &:focus {
                     color: $colorAkcent;
                     outline: none;
-                }
+                  
+                } 
+                
             }
+            &--footer {
+                             margin-top: 302px;
+                         }
     
             // &__item:not(:last-child) {
             //     margin-right: 50px;
             // }
+                &__item {
+                    margin-bottom: 32px;
+                }
     
             &--current {
                 color: $colorAkcent;
@@ -82,12 +98,30 @@
                 fill: currentColor;
                 margin-right: 10px;
             }
+            // &__nav {
+          
+             
+            // }
         }
         .menu__button {
             display: inline-flex;
             margin: 0;
             padding: 0;
-            background-color: grey;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            
+                cursor: pointer;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                // top: 10px;
+                // right: 10px;
+                    &:focus,
+                        &:focus use {
+                            outline: none;
+                            fill: $colorAkcent;
+                        }
         }
         .menu__button .menu__close{
             display: none;
@@ -100,6 +134,44 @@
            .menu__button.is-open .menu__open{
             display: none;
         }
+        .mobile {
+            display: none;
+
+        }
+         .mobile.is-open {
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            display: block;
+            padding: 40px 48px;
+        }
+       
+               
+                
+          
+        .mobile__icon {
+         position: relative;
+             padding: 12px 8px;
+            width: 40px; 
+            height: 40px;
+
+        }
+        .menu__close, .menu__open {
+fill: $colorSecondaryText;
+    width: 11px;
+    height: 11px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        outline: none;
+        fill: $colorAkcent;
+    }
+        }
+
+
  @media screen and (min-width:480px) {}
 
 @media screen and (min-width:768px) {
