@@ -83,6 +83,23 @@
                 margin-right: 10px;
             }
         }
+        .menu__button {
+            display: inline-flex;
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+        }
+        .menu__button .menu__close{
+            display: none;
+        }
+
+         .menu__button.is-open .menu__close{
+            display: block;
+        }
+
+           .menu__button.is-open .menu__open{
+            display: none;
+        }
  @media screen and (min-width:480px) {}
 
 @media screen and (min-width:768px) {

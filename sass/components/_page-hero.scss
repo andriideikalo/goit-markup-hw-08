@@ -21,7 +21,8 @@
             letter-spacing: 0.06em;
             text-transform: uppercase;
             color: $primaryColor;
-            max-width: 360px;
+            width: 360px;
+            margin-left: -23px;
         }
 
         &__bth {
@@ -31,7 +32,7 @@
             font-size: 16px;
             line-height: 1.88;
             letter-spacing: 0.06em;
-            padding: 10px 32px;
+            padding: 10px 24px;
             background-color: $colorAkcent;
             color: $primaryColor;
             cursor: pointer;
