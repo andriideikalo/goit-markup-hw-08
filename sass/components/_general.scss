@@ -5,6 +5,7 @@
             color: $colorPrimaryText;
             font-size: $primaryFontSize;
             letter-spacing: 0.03em;
+            overflow-x: hidden;
             // margin: 0 auto;
         }
     
@@ -41,17 +42,14 @@
         .link {
             text-decoration: none;
         }
-@media screen and (min-width: 480px) {}
-
+@media screen and (min-width: 480px) {
+    .container {
+                    width: 480px;
+                }
+}
+@media screen and (min-width: 768px) { .container { width: 768px;}}
 @media screen and (min-width: 1200px) {
 
-body {
-    font-family: "Roboto", sans-serif;
-    background-color: $primaryColor;
-    color: $colorPrimaryText;
-    font-size: $primaryFontSize;
-    letter-spacing: 0.03em;
-}
 .container {
     margin: 0 auto;
     width: 1200px;
