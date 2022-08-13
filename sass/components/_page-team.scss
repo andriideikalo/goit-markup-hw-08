@@ -1,300 +1,175 @@
+.team {
+	background-color: $colorBackground;
 
-    .team {
-            background-color: $colorBackground;
-            // max-width: 480px;
-    
-            &__title {
-                font-weight: 700;
-                font-size: 36px;
-                line-height: 1.16;
-                color: $colorSecondaryText;
-                margin-bottom: 50px;
-                text-align: center;
-            }
-    
-            // &__list {
-            //     display: flex;
-            // }
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.16;
+		color: $colorSecondaryText;
+		margin-bottom: 50px;
+		text-align: center;
+	}
 
-           &__foto {
-           width: 450px;
-              margin: 0 auto;
-            }
-    
-            &__person {
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 1.18;
-                color: $colorSecondaryText;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-    
-            &__about {
-                padding: 30px 0;
-            }
-    
-            &__positions {
-                font-size: 16px;
-                line-height: 1.18;
-                text-align: center;
-                margin-bottom: 16px;
-            }
-    
-            &__item {
-                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-                border-radius: 0px 0px 4px 4px;
-                background: $primaryColor;
-                margin-bottom: 30px;
-              
-    
-                // &:not(:last-child) {
-                //     margin-right: 30px;
-                // }
-            }
-    
-            &__link {
-                display: flex;
-                // display: inline-block;
-                margin: 0 auto;
-                // width: 206px;
-                gap: 10px;
-                justify-content: center;
-                    align-items: center;
-            }
-    
-                           &__social {
-                               color: $colorIcon;
-                               width: 44px;
-                               height: 44px;
-                               border: none;
-                               border-radius: 50%;
-                               cursor: pointer;
-                               display: flex;
-                               align-items: center;
-                               justify-content: center;
-                               transition-property: background-color, color, filter;
-                               transition-duration: 250ms;
-                               transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            
-                               &:hover,
-                               &:focus {
-                                   background-color: $colorAkcent;
-                                   color: $primaryColor;
-                                   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                                   outline: none;
-                               }
-                           }
-    
-            &__icon {
-                fill: currentColor;
-                width: 20px;
-                height: 20px;
-                cursor: pointer;
-            }
-        }
+	
+
+	&__person {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.18;
+		color: $colorSecondaryText;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	&__about {
+		padding: 30px 0;
+	}
+
+	&__positions {
+		font-size: 16px;
+		line-height: 1.18;
+		text-align: center;
+		margin-bottom: 16px;
+	}
+
+	&__item {
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+		border-radius: 0px 0px 4px 4px;
+		background: $primaryColor;
+		margin-bottom: 30px;
+
+	}
+
+	&__link {
+		display: flex;
+		margin: 0 auto;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__social {
+		color: $colorIcon;
+		width: 44px;
+		height: 44px;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition-property: background-color, color, filter;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			background-color: $colorAkcent;
+			color: $primaryColor;
+			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+			outline: none;
+		}
+	}
+
+	&__icon {
+		fill: currentColor;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+	}
+}
 @media screen and (min-width: 480px) {
-    .team {
-            background-color: $colorBackground;
-            // max-width: 480px;
-    
-            &__title {
-                font-weight: 700;
-                font-size: 28px;
-                line-height: 1.17;
-               
-            }
-    
-            // &__list {
-            //     display: flex;
-            // }
-    
-            &__foto {
-                width: 450px;
-                margin: 0 auto;
-            }
-    
-            &__person {
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 1.18;
-                color: $colorSecondaryText;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-    
-            &__about {
-                padding: 30px 0;
-            }
-    
-            &__positions {
-                font-size: 16px;
-                line-height: 1.18;
-                text-align: center;
-                margin-bottom: 16px;
-            }
-    
-            &__item {
-                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-                border-radius: 0px 0px 4px 4px;
-                background: $primaryColor;
-    
-    
-                // &:not(:last-child) {
-                //     margin-right: 30px;
-                // }
-            }
-    
-            &__link {
-                display: flex;
-                // display: inline-block;
-                margin: 0 auto;
-                // width: 206px;
-                gap: 10px;
-                justify-content: center;
-                align-items: center;
-            }
-    
-            // &__social {
-            //     color: $colorIcon;
-            //     width: 44px;
-            //     height: 44px;
-            //     border: none;
-            //     border-radius: 50%;
-            //     cursor: pointer;
-            //     // display: flex;
-            //     align-items: center;
-            //     justify-content: center;
-            //     transition-property: background-color, color, filter;
-            //     transition-duration: 250ms;
-            //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-            //     &:hover,
-            //     &:focus {
-            //         background-color: $colorAkcent;
-            //         color: $primaryColor;
-            //         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            //         outline: none;
-            //     }
-            // }
-    
-            &__icon {
-                fill: currentColor;
-                width: 20px;
-                height: 20px;
-                cursor: pointer;
-            }
-        }
-}
+	.team {
+		
+		&__title {
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 1.17;
+		}
+
+		
+		
+		       
+}}
 @media screen and (min-width: 768px) {
-    .team {
-              
-            &__foto {
-               
-                width: 354px;
-                    margin-bottom: 30px;
-                    // margin: 0 auto;
-
-            }
-                         &__list {
-                            display: flex;
-                                flex-wrap: wrap;
-                                // width: 768px;
-                                align-items: center;
-                                    justify-content: center;
-                                    flex-basis: calc(100% / 2);
-
-                         }
-        }
+	.team {
+       
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+            margin-bottom: -30px;
+          		}
+		&__item {
+       
+            width: 354px;
+			// flex-basis: calc(100% / 2);
+            margin: 0 auto;
+            margin-bottom: 30px;
+           
+		}
 }
-
-@media screen and (min-width:1200px) {
-    .team {
-            background-color: $colorBackground;
-    
-            &__title {
-                font-weight: 700;
-                font-size: 36px;
-                line-height: 1.16;
-                color: $colorSecondaryText;
-                margin-bottom: 50px;
-                text-align: center;
-            }
-    
-            &__list {
-                display: flex;
-                // width: 1200px;
-            }
-            &__foto {
-                width: 270px;
-            }
-            &__person {
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 1.18;
-                color: $colorSecondaryText;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-    
-            &__about {
-                padding: 30px 0;
-            }
-    
-            &__positions {
-                font-size: 16px;
-                line-height: 1.18;
-                text-align: center;
-                margin-bottom: 16px;
-            }
-    
-            &__item {
-                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-                border-radius: 0px 0px 4px 4px;
-                background: $primaryColor;
-    
-                &:not(:last-child) {
-                    margin-right: 30px;
-                }
-            }
-    
-            &__link {
-                display: flex;
-                margin: 0 auto;
-                width: 206px;
-                gap: 10px;
-            }
-    
-            &__social {
-                color: $colorIcon;
-                width: 44px;
-                height: 44px;
-                border: none;
-                border-radius: 50%;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition-property: background-color, color, filter;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-                &:hover,
-                &:focus {
-                    background-color: $colorAkcent;
-                    color: $primaryColor;
-                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                    outline: none;
-                }
-            }
-    
-            &__icon {
-                fill: currentColor;
-                width: 20px;
-                height: 20px;
-                cursor: pointer;
-            }
-        }
 }
+@media screen and (min-width: 1200px) {
+	.team {
+		
 
+		&__title {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 1.16;
+			color: $colorSecondaryText;
+			margin-bottom: 50px;
+			text-align: center;
+		}
 
+		&__list {
+			display: flex;
+		}
+		
+		
+		&__item {
+			width: 270px;
+            flex-basis: inherit;
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+		}
+
+		&__link {
+			display: flex;
+			margin: 0 auto;
+			width: 206px;
+			gap: 10px;
+		}
+
+		&__social {
+			color: $colorIcon;
+			width: 44px;
+			height: 44px;
+			border: none;
+			border-radius: 50%;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition-property: background-color, color, filter;
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+			&:hover,
+			&:focus {
+				background-color: $colorAkcent;
+				color: $primaryColor;
+				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+				outline: none;
+			}
+		}
+
+		&__icon {
+			fill: currentColor;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+		}
+	}
+}
