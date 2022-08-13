@@ -351,28 +351,28 @@ body {
   }
 }
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/480/hero.webp);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/480/hero.webp);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 480px;
-  height: 400px;
-  padding: 118px 60px;
+  max-width: 1600px;
+  height: 600px;
+  padding: 200px 0;
+  margin: 0 auto;
 }
 .hero__title {
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
+  font-size: 44px;
+  line-height: 1.36;
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
-  width: 360px;
-  margin-left: -23px;
+  width: 696px;
 }
 .hero__bth {
   display: block;
@@ -381,13 +381,13 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  padding: 10px 24px;
+  padding: 10px 32px;
   background-color: #2196f3;
   color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  max-width: 200px;
+  min-width: 200px;
   margin: 0 auto;
   -webkit-transition-property: background-color, -webkit-box-shadow;
   transition-property: background-color, -webkit-box-shadow;
@@ -404,6 +404,25 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    padding: 118px 0;
+    max-width: 480px;
+    height: 400px;
+  }
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 6%;
+    width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 0;
+    max-width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero.jpg);
