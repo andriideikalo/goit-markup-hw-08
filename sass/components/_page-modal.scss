@@ -216,3 +216,228 @@
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+
+
+@media screen and (min-width: 480px) {
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        height: 609px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        background-color: $primaryColor;
+        transform: translate(-50%, -50%) scale(1);
+        transition: opacity 1050ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 40px;
+    
+        &__title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 1.5;
+                letter-spacing: 0.03em;
+                color: $colorSecondaryText;
+                margin-bottom: 12px;
+            }
+        
+        &__content {
+                text-align: left;
+                font-size: 12px;
+                line-height: calc(14 / 12);
+                letter-spacing: 0.01em;
+                color: $colorPrimaryText;
+            }
+        
+        &__title {
+                display: block;
+                margin-bottom: 4px;
+            }
+        &__form {
+                .label {
+                        position: relative;
+                        margin-bottom: 10px;
+                
+                        &__icon {
+                            position: absolute;
+                            top: 32px;
+                            left: 11px;
+                            transition-property: fill, border-color;
+                            transition-duration: 250ms;
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                        }
+    
+                        &__title {
+                            display: block;
+                            margin-bottom: 4px;
+                        }
+    
+                        &__input {
+                            width: 370px;
+                            height: 40px;
+                            border: 1px solid rgba(33, 33, 33, 0.2);
+                            border-radius: 4px;
+                            padding-left: 30px;
+                            transition-property: fill, border-color;
+                            transition-duration: 250ms;
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                
+                            &:focus,
+                            &:focus+.label__icon,
+                            &:hover,
+                            &:hover+.label__icon {
+                                fill: $colorAkcent;
+                                outline: none;
+                                border-color: $colorAkcent;
+                            }
+                        }
+                
+                        &__feedback {
+                            height: 120px;
+                            padding: 12px 16px;
+                            margin-bottom: 20px;
+                            color: $colorPrimaryText;
+                            resize: none;
+                        }
+                    }
+            }
+        &__checkbox {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border: none;
+                margin-bottom: 30px;
+            }
+        
+        &__customCheckbox {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+        
+        &__accept--checked {
+                display: inline-flex;
+                align-items: center;
+            }
+        
+        &__customCheckbox+label::before {
+                content: "";
+                width: 16px;
+                height: 15px;
+                border: 2px solid $colorSecondaryText;
+                border-radius: 4px;
+                background-size: 100%;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                transition-property: background-color, box-shadow;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        
+         &__customCheckbox:checked+label::before {
+                border-color: #0b76ef;
+                background-color: #0b76ef;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+            }
+        
+         &__accept {
+                font-size: $primaryFontSize;
+                line-height: calc(24 / 14);
+                letter-spacing: 0.03em;
+        
+            }
+        
+        &__link {
+                color: $colorAkcent;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        
+        &__btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 200px;
+                padding: 10px 55px;
+                background: $colorAkcent;
+                color: $primaryColor;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: calc(30 / 16);
+                letter-spacing: 0.06em;
+                text-transform: capitalize;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin: 0 auto;
+                transition-property: background-color, box-shadow;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+                &:hover,
+                &:focus {
+                    background-color: $colorBtnHover;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                    outline: none;
+                }
+            }
+        
+        &__close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: $primaryColor;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+                &:focus,
+                &:focus use {
+                    outline: none;
+                    fill: $colorAkcent;
+                }
+            }
+        
+        &__iconClose {
+                fill: $colorSecondaryText;
+                width: 11px;
+                height: 11px;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+                &:hover,
+                &:focus {
+                    outline: none;
+                    fill: $colorAkcent;
+                }
+            }
+    }
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &.is-hidden {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
+@media screen and (min-width: 7680px){}
+
+@media screen and (min-width: 1200px){}
