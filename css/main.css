@@ -336,6 +336,26 @@ body {
   .mobile--current {
     color: #2196f3;
   }
+  .mobile__list--socialy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+  .mobile__socialy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .mobile__socialy::after {
+    content: "";
+    display: block;
+    background-color: red;
+    width: 1px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu__button {
