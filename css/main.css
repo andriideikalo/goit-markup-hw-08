@@ -1599,6 +1599,9 @@ body.no-scroll {
     font-size: 28px;
     line-height: 1.17;
   }
+  .team__foto {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__list {
@@ -1613,6 +1616,9 @@ body.no-scroll {
     width: 354px;
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+  .team__foto {
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1636,6 +1642,9 @@ body.no-scroll {
   }
   .team__item:not(:last-child) {
     margin-right: 30px;
+  }
+  .team__foto {
+    width: 270px;
   }
   .team__link {
     display: -webkit-box;

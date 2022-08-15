@@ -85,8 +85,10 @@
 			font-weight: 700;
 			font-size: 28px;
 			line-height: 1.17;
-		}
-
+			}
+			&__foto {
+				width: 450px;
+			}
 		
 		
 		       
@@ -105,8 +107,10 @@
 			// flex-basis: calc(100% / 2);
             margin: 0 auto;
             margin-bottom: 30px;
-           
-		}
+           		}
+				   &__foto {
+					width: 354px;
+				}
 }
 }
 @media screen and (min-width: 1200px) {
@@ -133,6 +137,9 @@
 			&:not(:last-child) {
 				margin-right: 30px;
 			}
+		}
+		&__foto {
+			width: 270px;
 		}
 
 		&__link {
