@@ -3,7 +3,7 @@
 		&__link {
 			font-family: "Raleway", sans-serif;
 			font-weight: 700;
-			font-size: 26px;
+			font-size: 24px;
 			line-height: 1.19;
 			color: $colorSecondaryText;
 			margin-right: 93px;
@@ -211,12 +211,14 @@
 	}
 }
 @media screen and (min-width: 480px) {
+	
 	.header {
 		position: relative;
 		border-bottom: 1px solid $colorBorder;
 		&__list {
 			display: none;
 		}
+		&__list__tabl {display: none;}
 		&__nav {
 			height: 60px;
 		}
@@ -233,10 +235,10 @@
 		&__link {
 			font-family: "Raleway", sans-serif;
 			font-weight: 700;
-			font-size: 26px;
-			line-height: 1.19;
+			font-size: 24px;
+			line-height: 1.16;
 			color: $colorSecondaryText;
-			margin-right: 93px;
+			
 		}
 
 		&__logo {
@@ -250,7 +252,7 @@
 			letter-spacing: 0.02em;
 			color: $colorSecondaryText;
 			display: block;
-			padding: 32px 0;
+			padding: 22px 0;
 			transition-property: color;
 			transition-duration: 250ms;
 			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -456,27 +458,39 @@
 	}
 }
 
+
 @media screen and (min-width: 768px) {
+	.mobile {display: none;}
 	.menu__button {
 		display: none;
 	}
+	
 	.header {
 		&__container,
 		&__list {
 			display: flex;
 			align-items: center;
 		}
-		&__contact {
+	
+		&__list__tabl {display: block;}
+		&__list__tabl {
+margin-left: 90px;
+		}
+		&__link {
+			
+			margin-right: 87px;
+		}
+		&__contact__tabl {
 			font-family: inherit;
 			font-weight: 500;
 			display: flex;
 			align-items: center;
 			font-style: normal;
-			font-size: $primaryFontSize;
-			line-height: 1.14;
+			font-size: 12px;
+			line-height: 1.16;
 			letter-spacing: 0.02em;
 			color: $colorPrimaryText;
-			padding: 32px 0;
+			// padding: 32px 0;
 			transition-property: color;
 			transition-duration: 250ms;
 			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -506,10 +520,35 @@
 		}
 		&__icon {
 			fill: currentColor;
-			margin-right: 10px;
+			margin-right: 8px;
+		}
+		&__nav {
+			padding: 21px 0;
 		}
 
 	}
+	.header__contact__tabl__email {
+	margin-bottom: 10px;
+	font-family: inherit;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			font-style: normal;
+			font-size: 12px;
+			line-height: 1.16;
+			letter-spacing: 0.02em;
+			color: $colorPrimaryText;
+			// padding: 32px 0;
+			transition-property: color;
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+			&:hover,
+			&:focus {
+				color: $colorAkcent;
+				outline: none;
+			}
+}
 }
 @media screen and (min-width: 1200px) {
 	.header {
@@ -553,6 +592,7 @@
 		&__list {
 			display: flex;
 			align-items: center;
+		
 		}
 
 		&__nav {
@@ -580,7 +620,8 @@
 				outline: none;
 			}
 		}
-
+		.header__contact__tabl__email {
+			margin-bottom: 0px;}
 		&__item:not(:last-child) {
 			margin-right: 50px;
 		}
