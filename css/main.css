@@ -1409,6 +1409,9 @@ body.no-scroll {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.advantages__item {
+  margin-bottom: 30px;
+}
 .advantages__icon {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1420,9 +1423,6 @@ body.no-scroll {
   }
   .advantages__group {
     width: 450px;
-  }
-  .advantages__item {
-    margin-bottom: 30px;
   }
   .advantages__list {
     margin-bottom: -30px;
