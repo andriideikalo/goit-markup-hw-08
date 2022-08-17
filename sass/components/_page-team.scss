@@ -96,6 +96,11 @@
 @media screen and (min-width: 768px) {
 	.team {
        
+		&__title {
+			font-size: 28px;
+			line-height: 1.17;
+			
+		}
 		&__list {
 			display: flex;
 			flex-wrap: wrap;

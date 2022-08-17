@@ -1,5 +1,7 @@
 @media screen and (max-width: 479px) {
 	.header {
+	
+		border-bottom: 1px solid $colorBorder;
 		&__link {
 			font-family: "Raleway", sans-serif;
 			font-weight: 700;
@@ -7,20 +9,21 @@
 			line-height: 1.19;
 			color: $colorSecondaryText;
 			margin-right: 93px;
-		
 		}
 
 		&__logo {
 			color: $colorAkcent;
 		}
-	
+
 		&__nav {
 			display: flex;
 			align-items: center;
-			height: 60px;
+				height: 60px;
+			
 		}
 		.__container {
-		padding-top: 15px;}
+			padding-top: 15px;
+		}
 		.menu__button {
 			position: absolute;
 			width: 40px;
@@ -36,14 +39,14 @@
 			width: 40px;
 			height: 40px;
 		}
-	
+
 		.menu__button.is-open .menu__open {
 			display: none;
 		}
 		.menu__button.is-open .menu__close {
 			display: block;
 		}
-	
+
 		.menu__button__close {
 			position: absolute;
 			width: 40px;
@@ -55,7 +58,7 @@
 			border: none;
 			background-color: $primaryColor;
 		}
-	
+
 		.mobile {
 			position: relative;
 			position: fixed;
@@ -71,20 +74,26 @@
 			z-index: 1000;
 			// display: none;
 			transform: translateX(100%);
-	
+
+			&__list--auto {
+				margin-bottom: auto;
+			}
+
 			&__container {
 				position: relative;
 				top: 0;
-	
+				display: flex;
+				flex-direction: column;
+
 				margin: 0 auto;
 				width: 100vw;
 				height: 100vh;
 				padding: 48px 40px;
 				background-color: rgba(255, 255, 255, 1);
 			}
-	
+
 			&.is-open {
-				display: block;
+				// display: block;
 				position: absolute;
 				width: 100vw;
 				height: 100vh;
@@ -95,7 +104,7 @@
 				// transform: translatey(100%);
 				transition: transform 250ms;
 			}
-	
+
 			&__contact {
 				font-family: inherit;
 				font-weight: 500;
@@ -110,7 +119,7 @@
 				transition-property: color;
 				transition-duration: 250ms;
 				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	
+
 				&:hover,
 				&:focus {
 					color: $colorAkcent;
@@ -127,7 +136,7 @@
 					transition-property: color;
 					transition-duration: 250ms;
 					transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	
+
 					&:hover,
 					&:focus {
 						color: $colorAkcent;
@@ -147,17 +156,17 @@
 				transition-property: color;
 				transition-duration: 250ms;
 				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	
+
 				&:hover,
 				&:focus {
 					color: $colorAkcent;
 					outline: none;
 				}
 			}
-			&__item--contact {
-				// display: inline-block;
-				margin-top: 302px;
-			}
+			// &__item--contact {
+			// 	// display: inline-block;
+			// 	margin-top: 302px;
+			// }
 			// &__linkPages:last-child {
 			// 	margin-bottom: auto;
 			// }
@@ -186,39 +195,30 @@
 				color: #2196f3;
 			}
 		}
-	
-		// 			&:not(:last-child) {
-		// 				content: "";
-		// 				display: block;
-		// 				background-color: red;
-		// 				// transform: rotate(90deg);
-		// 				width: 1px;
-		// 				// height: 100%;
-		// 			}
 		.mobile__icon {
 			fill: $colorSecondaryText;
-	
+
 			&:hover,
 			&:focus {
 				fill: $colorAkcent;
 				outline: none;
 			}
 		}
-&__list {
-	display: none;
-}
-
+		&__list {
+			display: none;
+		}
 	}
 }
 @media screen and (min-width: 480px) {
-	
 	.header {
 		position: relative;
 		border-bottom: 1px solid $colorBorder;
 		&__list {
 			display: none;
 		}
-		&__list__tabl {display: none;}
+		&__list__tabl {
+			display: none;
+		}
 		&__nav {
 			height: 60px;
 		}
@@ -238,7 +238,6 @@
 			font-size: 24px;
 			line-height: 1.16;
 			color: $colorSecondaryText;
-			
 		}
 
 		&__logo {
@@ -252,7 +251,7 @@
 			letter-spacing: 0.02em;
 			color: $colorSecondaryText;
 			display: block;
-			padding: 22px 0;
+			padding: 32px 0;
 			transition-property: color;
 			transition-duration: 250ms;
 			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -318,8 +317,10 @@
 		&__container {
 			position: relative;
 			top: 0;
+			display: flex;
+			flex-direction: column;
 
-			margin: 0 auto;
+			// margin: 0 auto;
 			width: 100vw;
 			height: 100vh;
 			padding: 48px 40px;
@@ -397,10 +398,10 @@
 				outline: none;
 			}
 		}
-		&__item--contact {
-			// display: inline-block;
-			margin-top: 302px;
-		}
+		// &__item--contact {
+		// 	// display: inline-block;
+		// 	margin-top: 302px;
+		// }
 		// &__linkPages:last-child {
 		// 	margin-bottom: auto;
 		// }
@@ -427,6 +428,9 @@
 			text-decoration: none;
 			letter-spacing: 0.02em;
 			color: #2196f3;
+		}
+		&__list--auto {
+			margin-bottom: auto;
 		}
 	}
 
@@ -458,26 +462,31 @@
 	}
 }
 
-
 @media screen and (min-width: 768px) {
-	.mobile {display: none;}
+	.mobile {
+		display: none;
+	}
 	.menu__button {
 		display: none;
 	}
-	
+
 	.header {
+		
+		border-bottom: 1px solid $colorBorder;
 		&__container,
 		&__list {
 			display: flex;
 			align-items: center;
 		}
-	
-		&__list__tabl {display: block;}
+		&__container {height: 80px;}
+
 		&__list__tabl {
-margin-left: 90px;
+			display: block;
+		}
+		&__list__tabl {
+			margin-left: 90px;
 		}
 		&__link {
-			
 			margin-right: 87px;
 		}
 		&__contact__tabl {
@@ -524,34 +533,36 @@ margin-left: 90px;
 		}
 		&__nav {
 			padding: 21px 0;
-		}
+			height: 79;
 
+		}
 	}
 	.header__contact__tabl__email {
-	margin-bottom: 10px;
-	font-family: inherit;
-			font-weight: 500;
-			display: flex;
-			align-items: center;
-			font-style: normal;
-			font-size: 12px;
-			line-height: 1.16;
-			letter-spacing: 0.02em;
-			color: $colorPrimaryText;
-			// padding: 32px 0;
-			transition-property: color;
-			transition-duration: 250ms;
-			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		margin-bottom: 10px;
+		font-family: inherit;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		font-style: normal;
+		font-size: 12px;
+		line-height: 1.16;
+		letter-spacing: 0.02em;
+		color: $colorPrimaryText;
+		// padding: 32px 0;
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-			&:hover,
-			&:focus {
-				color: $colorAkcent;
-				outline: none;
-			}
-}
+		&:hover,
+		&:focus {
+			color: $colorAkcent;
+			outline: none;
+		}
+	}
 }
 @media screen and (min-width: 1200px) {
 	.header {
+		
 		border-bottom: 1px solid $colorBorder;
 
 		&__link {
@@ -575,7 +586,7 @@ margin-left: 90px;
 			letter-spacing: 0.02em;
 			color: $colorSecondaryText;
 			display: block;
-			padding: 22px 0;
+			padding: 32px 0;
 			transition-property: color;
 			transition-duration: 250ms;
 			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -586,17 +597,17 @@ margin-left: 90px;
 				outline: none;
 			}
 		}
-
+&__container {height: 80px;}
 		&__container,
 		&__nav,
 		&__list {
 			display: flex;
 			align-items: center;
-		
 		}
 
 		&__nav {
 			margin-right: auto;
+			
 		}
 
 		&__contact {
@@ -621,7 +632,8 @@ margin-left: 90px;
 			}
 		}
 		.header__contact__tabl__email {
-			margin-bottom: 0px;}
+			margin-bottom: 0px;
+		}
 		&__item:not(:last-child) {
 			margin-right: 50px;
 		}

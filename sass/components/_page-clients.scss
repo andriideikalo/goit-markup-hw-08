@@ -5,7 +5,7 @@
             // margin: 0 auto;
             &__title {
                 font-weight: 700;
-                font-size: 36px;
+                font-size: 28px;
                 line-height: 1.16;
                 text-align: center;
                 letter-spacing: 0.03em;
@@ -67,6 +67,11 @@
         }
 @media screen and (min-width:480px) {
     .client{
+        &__title {
+            
+            font-size: 28px;
+           
+        }
         &__item {
         
                 flex-basis: calc(100% / 2);
@@ -114,6 +119,11 @@
 
 @media screen and (min-width: 768px) {
     .client {
+        &__title {
+            
+            font-size: 28px;
+           
+        }
             &__item {
     
                 flex-basis: calc(100% / 3);
