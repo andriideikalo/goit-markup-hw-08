@@ -37,6 +37,10 @@ body {
   letter-spacing: 0.03em;
   overflow-x: hidden;
 }
+body.no-scroll {
+  position: fixed;
+  overflow-y: hidden;
+}
 
 .container {
   width: 100%;
@@ -457,7 +461,7 @@ body {
             transform: translateX(100%);
   }
   .mobile__container {
-    position: relative;
+    position: fixed;
     top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
