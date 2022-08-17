@@ -16,6 +16,7 @@
 		margin: 0 auto;
 	
 	}
+	
 
 	&__group {
 		background: $colorBackground;
@@ -28,9 +29,7 @@
 		margin: 0 auto;
 		margin-bottom: 30px;
 	}
-	&__item {
-		margin-bottom: 30px;
-	}
+	
 
 	&__icon {
 		object-fit: cover;
@@ -41,7 +40,14 @@
 	.advantages {
 		&__content {
 			width: 450px;
+					}
+		&__item {
+			margin-bottom: 30px;
 		}
+		&__item:last-child {
+			margin-bottom: 0px;
+		}
+	
 
 		&__group {
 			width: 450px;
