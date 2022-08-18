@@ -17,7 +17,6 @@
 		letter-spacing: inherit;
 		color: $primaryColor;
 		text-decoration: none;
-		margin-top: -12px;
 	}
 
 	&__logo {
@@ -92,7 +91,6 @@
 		justify-content: center;
 		align-items: center;
 
-		margin-bottom: 60px;
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,10 +124,11 @@
 
 	&__list {
 		display: flex;
-        flex-wrap: wrap;
+		flex-wrap: wrap;
 		gap: 10px;
 		align-items: center;
 		justify-content: center;
+		margin-bottom: 60px;
 	}
 
 	&__subscription {
@@ -157,7 +156,7 @@
 		line-height: calc(20 / 16);
 		letter-spacing: 0.03em;
 		margin: 20px auto;
-        width: 93%;
+		width: 93%;
 
 		&:focus-visible {
 			outline: none;
@@ -200,18 +199,51 @@
 		&__list--contact {
 			margin-bottom: 60px;
 		}
-        &__input {
-          margin: 20px auto;
-           width: 93%;
-            
-        }
+		&__input {
+			margin: 20px auto;
+			width: 93%;
+		}
 	}
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.footer {
+		padding: 60px 0px;
+		// max-width: 480px;
+		&__list--contact {
+			margin-bottom: 60px;
+		}
+		&__input {
+			margin: 20px auto;
+			width: 93%;
+		}
+		// &__flex {
+		// 	// display: flex;
+		// 	margin: 0;
+		// }
+	
+	&__tabl__contact {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-left: calc(76px - 15px);
+		padding-right: calc(89px - 15px);
+	}
+}
+}
+
 @media screen and (min-width: 1200px) {
 	.footer {
 		position: relative;
 		background-color: $secondaryBackgraund;
 		padding: 60px 0px;
+
+		&__tabl__contact {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-left: 0;
+			padding-right: 0;
+		}
 		&__list--contact {
 			margin-bottom: 60px;
 		}
@@ -225,7 +257,6 @@
 			letter-spacing: inherit;
 			color: $primaryColor;
 			text-decoration: none;
-			margin-top: -12px;
 		}
 
 		&__logo {
@@ -338,6 +369,7 @@
 			position: relative;
 			display: flex;
 			gap: 12px;
+			align-items: center;
 		}
 
 		&__input {

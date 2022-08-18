@@ -1,6 +1,5 @@
 @media screen and (max-width: 479px) {
 	.header {
-	
 		border-bottom: 1px solid $colorBorder;
 		&__link {
 			font-family: "Raleway", sans-serif;
@@ -18,8 +17,7 @@
 		&__nav {
 			display: flex;
 			align-items: center;
-				height: 60px;
-			
+			height: 60px;
 		}
 		.__container {
 			padding-top: 15px;
@@ -471,74 +469,34 @@
 	}
 
 	.header {
-		
 		border-bottom: 1px solid $colorBorder;
-		&__container,
-		&__list {
-			display: flex;
-			align-items: center;
-		}
-		&__container {height: 80px;}
 
-		&__list__tabl {
-			display: block;
-		}
-		&__list__tabl {
-			margin-left: 90px;
-		}
-		&__link {
-			margin-right: 87px;
-		}
-		&__contact__tabl {
-			font-family: inherit;
-			font-weight: 500;
-			display: flex;
-			align-items: center;
-			font-style: normal;
-			font-size: 12px;
-			line-height: 1.16;
-			letter-spacing: 0.02em;
-			color: $colorPrimaryText;
-			// padding: 32px 0;
-			transition-property: color;
-			transition-duration: 250ms;
-			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-			&:hover,
-			&:focus {
-				color: $colorAkcent;
-				outline: none;
-			}
-		}
-		&__item:not(:last-child) {
+		&__linkPages {
 			margin-right: 50px;
 		}
-		&--current {
-			color: $colorAkcent;
-
-			&::after {
-				position: absolute;
-				bottom: 0;
-				content: "";
-				display: block;
-				width: 100%;
-				height: 4px;
-				background-color: $colorAkcent;
-				border-radius: 2px;
-			}
+		&__linkPages:last-child {
+			margin-right: 0px;
 		}
-		&__icon {
-			fill: currentColor;
-			margin-right: 8px;
-		}
-		&__nav {
-			padding: 21px 0;
-			height: 79;
-
-		}
+	
+	&__container,
+	&__list {
+		display: flex;
+		align-items: center;
 	}
-	.header__contact__tabl__email {
-		margin-bottom: 10px;
+	&__container {
+		height: 80px;
+	}
+
+	&__list__tabl {
+		display: block;
+	}
+	&__list__tabl {
+		margin-left: 40px;
+	}
+	&__link {
+		margin-right: 87px;
+	}
+	&__contact__tabl {
 		font-family: inherit;
 		font-weight: 500;
 		display: flex;
@@ -559,10 +517,63 @@
 			outline: none;
 		}
 	}
+	&__item {
+		margin-right: 50px;
+	}
+	&__item--tab {
+		margin-right: 0px;
+	}
+	// &__item:nth-last-child(2n+1) {
+	// 	margin-right: 0px;
+	// }
+	&--current {
+		color: $colorAkcent;
+
+		&::after {
+			position: absolute;
+			bottom: 0;
+			content: "";
+			display: block;
+			width: 100%;
+			height: 4px;
+			background-color: $colorAkcent;
+			border-radius: 2px;
+		}
+	}
+	&__icon {
+		fill: currentColor;
+		margin-right: 8px;
+	}
+	&__nav {
+		padding: 21px 0;
+		height: 79;
+	}
+}}
+.header__contact__tabl__email {
+	margin-bottom: 10px;
+	font-family: inherit;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.02em;
+	color: $colorPrimaryText;
+	// padding: 32px 0;
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: $colorAkcent;
+		outline: none;
+	}
 }
+
 @media screen and (min-width: 1200px) {
 	.header {
-		
 		border-bottom: 1px solid $colorBorder;
 
 		&__link {
@@ -597,7 +608,9 @@
 				outline: none;
 			}
 		}
-&__container {height: 80px;}
+		&__container {
+			height: 80px;
+		}
 		&__container,
 		&__nav,
 		&__list {
@@ -607,7 +620,6 @@
 
 		&__nav {
 			margin-right: auto;
-			
 		}
 
 		&__contact {
