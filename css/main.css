@@ -630,7 +630,7 @@ body.no-scroll {
     display: block;
   }
   .header__list__tabl {
-    margin-left: 40px;
+    margin-left: 96px;
   }
   .header__link {
     margin-right: 87px;
@@ -663,6 +663,9 @@ body.no-scroll {
   .header__item {
     margin-right: 50px;
   }
+  .header__item:last-child {
+    margin-right: 0px;
+  }
   .header__item--tab {
     margin-right: 0px;
   }
@@ -679,9 +682,17 @@ body.no-scroll {
     background-color: #2196f3;
     border-radius: 2px;
   }
-  .header__icon {
+  .header__icon__phone {
     fill: currentColor;
     margin-right: 8px;
+    width: 10px;
+    height: 14px;
+  }
+  .header__icon__email {
+    fill: currentColor;
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
   }
   .header__nav {
     padding: 21px 0;
@@ -813,9 +824,17 @@ body.no-scroll {
     background-color: #2196f3;
     border-radius: 2px;
   }
-  .header__icon {
+  .header__icon__phone {
     fill: currentColor;
-    margin-right: 10px;
+    margin-right: 8px;
+    width: 10px;
+    height: 16px;
+  }
+  .header__icon__email {
+    fill: currentColor;
+    margin-right: 8px;
+    width: 16px;
+    height: 12px;
   }
 }
 .hero {

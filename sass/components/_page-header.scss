@@ -491,7 +491,7 @@
 		display: block;
 	}
 	&__list__tabl {
-		margin-left: 40px;
+		margin-left: 96px;
 	}
 	&__link {
 		margin-right: 87px;
@@ -517,8 +517,13 @@
 			outline: none;
 		}
 	}
-	&__item {
+	&__item{
 		margin-right: 50px;
+	
+	}
+	&__item:last-child{
+		margin-right: 0px;
+	
 	}
 	&__item--tab {
 		margin-right: 0px;
@@ -540,9 +545,17 @@
 			border-radius: 2px;
 		}
 	}
-	&__icon {
+	&__icon__phone {
 		fill: currentColor;
 		margin-right: 8px;
+		width: 10px; 
+		height: 14px;
+	}
+	&__icon__email {
+		fill: currentColor;
+		margin-right: 8px;
+		width: 14px; 
+		height: 10px;
 	}
 	&__nav {
 		padding: 21px 0;
@@ -651,6 +664,7 @@
 			margin-right: 50px;
 		
 		}
+		
 		.header__contact__tabl {
 			padding: 32px 0;
 		}
@@ -668,9 +682,17 @@
 				border-radius: 2px;
 			}
 		}
-		&__icon {
+		&__icon__phone {
 			fill: currentColor;
-			margin-right: 10px;
+			margin-right: 8px;
+			width: 10px; 
+			height: 16px;
+		}
+		&__icon__email {
+			fill: currentColor;
+			margin-right: 8px;
+			width: 16px; 
+			height: 12px;
 		}
 	}
 }
