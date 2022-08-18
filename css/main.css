@@ -792,9 +792,13 @@ body.no-scroll {
   }
   .header .header__contact__tabl__email {
     margin-bottom: 0px;
+    padding: 32px 0;
   }
   .header__item:not(:last-child) {
     margin-right: 50px;
+  }
+  .header .header__contact__tabl {
+    padding: 32px 0;
   }
   .header--current {
     color: #2196f3;

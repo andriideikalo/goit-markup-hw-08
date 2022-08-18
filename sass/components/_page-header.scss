@@ -645,9 +645,14 @@
 		}
 		.header__contact__tabl__email {
 			margin-bottom: 0px;
+			padding: 32px 0;
 		}
 		&__item:not(:last-child) {
 			margin-right: 50px;
+		
+		}
+		.header__contact__tabl {
+			padding: 32px 0;
 		}
 		&--current {
 			color: $colorAkcent;
