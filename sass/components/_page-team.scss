@@ -10,8 +10,6 @@
 		text-align: center;
 	}
 
-	
-
 	&__person {
 		font-weight: 500;
 		font-size: 16px;
@@ -37,7 +35,9 @@
 		border-radius: 0px 0px 4px 4px;
 		background: $primaryColor;
 		margin-bottom: 30px;
-
+	}
+	&__item:last-child {
+		margin-bottom: 0px;
 	}
 
 	&__link {
@@ -80,49 +80,42 @@
 }
 @media screen and (min-width: 480px) {
 	.team {
-		
 		&__title {
 			font-weight: 700;
 			font-size: 28px;
 			line-height: 1.17;
-			}
-			&__foto {
-				width: 450px;
-			}
-		
-		
-		       
-}}
+		}
+		&__foto {
+			width: 450px;
+		}
+	}
+}
 @media screen and (min-width: 768px) {
 	.team {
-       
 		&__title {
 			font-size: 28px;
 			line-height: 1.17;
-			
 		}
 		&__list {
 			display: flex;
 			flex-wrap: wrap;
-            margin-bottom: -30px;
+			margin-bottom: -30px;
 			justify-content: space-between;
-          		}
+		}
 		&__item {
-       
-            width: 354px;
-			// flex-basis: calc(100% / 2);
-            // margin: 0 auto;
-            margin-bottom: 30px;
-           		}
-				   &__foto {
-					width: 354px;
-				}
-}
+			width: 354px;
+			margin-bottom: 30px;
+		}
+		&__item:last-child {
+			margin-bottom: 30px;
+		}
+		&__foto {
+			width: 354px;
+		}
+	}
 }
 @media screen and (min-width: 1200px) {
 	.team {
-		
-
 		&__title {
 			font-weight: 700;
 			font-size: 36px;
@@ -135,11 +128,10 @@
 		&__list {
 			display: flex;
 		}
-		
-		
+
 		&__item {
 			width: 270px;
-            flex-basis: inherit;
+			flex-basis: inherit;
 			&:not(:last-child) {
 				margin-right: 30px;
 			}

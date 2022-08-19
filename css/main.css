@@ -1673,6 +1673,9 @@ body.no-scroll {
   background: #fff;
   margin-bottom: 30px;
 }
+.team__item:last-child {
+  margin-bottom: 0px;
+}
 .team__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1753,6 +1756,9 @@ body.no-scroll {
   }
   .team__item {
     width: 354px;
+    margin-bottom: 30px;
+  }
+  .team__item:last-child {
     margin-bottom: 30px;
   }
   .team__foto {
@@ -1980,12 +1986,8 @@ body.no-scroll {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 40px;
-  }
-  .btn__item {
-    margin-bottom: 15px;
-  }
-  .btn__item:not(:last-child) {
-    margin-right: 8px;
+    gap: 8px;
+    row-gap: 15px;
   }
   .btn__project {
     font-family: inherit;
@@ -2000,7 +2002,6 @@ body.no-scroll {
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-right: 8px;
     cursor: pointer;
     -webkit-transition-property: background-color, color, -webkit-box-shadow;
     transition-property: background-color, color, -webkit-box-shadow;
@@ -2127,6 +2128,9 @@ body.no-scroll {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
+  }
+  .btn__item {
+    margin-bottom: 0px;
   }
   .btn__project:last-child {
     margin-right: 0px;
@@ -2690,7 +2694,7 @@ body.no-scroll {
     padding-right: 0;
   }
   .footer__list--contact {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   }
   .footer__linkName {
     display: block;
@@ -2701,6 +2705,7 @@ body.no-scroll {
     letter-spacing: inherit;
     color: #fff;
     text-decoration: none;
+    text-align: left;
   }
   .footer__logo {
     color: #2196f3;
@@ -2727,6 +2732,7 @@ body.no-scroll {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
+    text-align: left;
   }
   .footer__item:last-child {
     margin-bottom: 0;
@@ -2753,6 +2759,7 @@ body.no-scroll {
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 20px;
+    text-align: left;
   }
   .footer__link {
     background: rgba(255, 255, 255, 0.1);
@@ -2835,6 +2842,7 @@ body.no-scroll {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
+    margin: 0;
   }
   .footer__input:focus-visible {
     outline: none;

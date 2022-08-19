@@ -70,7 +70,6 @@
 			background-color: rgba(255, 255, 255, 1);
 			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 			z-index: 1000;
-			// display: none;
 			transform: translateX(100%);
 
 			&__list--auto {
@@ -91,7 +90,6 @@
 			}
 
 			&.is-open {
-				// display: block;
 				position: absolute;
 				width: 100vw;
 				height: 100vh;
@@ -99,7 +97,6 @@
 				top: 0;
 				left: 0;
 				transform: translateX(0%);
-				// transform: translatey(100%);
 				transition: transform 250ms;
 			}
 
@@ -113,7 +110,6 @@
 				line-height: 1.17;
 				letter-spacing: 0.02em;
 				color: $colorPrimaryText;
-				// padding: 32px 0;
 				transition-property: color;
 				transition-duration: 250ms;
 				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,7 +124,6 @@
 					line-height: 1.16;
 					color: $colorPrimaryText;
 					display: inline-block;
-					// padding: 32px 0;
 					margin-top: 32px;
 					margin-bottom: 64px;
 					transition-property: color;
@@ -161,13 +156,7 @@
 					outline: none;
 				}
 			}
-			// &__item--contact {
-			// 	// display: inline-block;
-			// 	margin-top: 302px;
-			// }
-			// &__linkPages:last-child {
-			// 	margin-bottom: auto;
-			// }
+
 			&--current {
 				color: $colorAkcent;
 			}
@@ -309,7 +298,7 @@
 		background-color: rgba(255, 255, 255, 1);
 		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 		z-index: 1000;
-		// display: none;
+
 		transform: translateX(100%);
 
 		&__container {
@@ -318,7 +307,6 @@
 			display: flex;
 			flex-direction: column;
 
-			// margin: 0 auto;
 			width: 100vw;
 			height: 100vh;
 			padding: 48px 40px;
@@ -334,7 +322,6 @@
 			top: 0;
 			left: 0;
 			transform: translateX(0%);
-			// transform: translatey(100%);
 			transition: transform 250ms;
 		}
 
@@ -348,7 +335,6 @@
 			line-height: 1.17;
 			letter-spacing: 0.02em;
 			color: $colorPrimaryText;
-			// padding: 32px 0;
 			transition-property: color;
 			transition-duration: 250ms;
 			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -363,7 +349,6 @@
 				line-height: 1.16;
 				color: $colorPrimaryText;
 				display: inline-block;
-				// padding: 32px 0;
 				margin-top: 32px;
 				margin-bottom: 64px;
 				transition-property: color;
@@ -396,13 +381,7 @@
 				outline: none;
 			}
 		}
-		// &__item--contact {
-		// 	// display: inline-block;
-		// 	margin-top: 302px;
-		// }
-		// &__linkPages:last-child {
-		// 	margin-bottom: auto;
-		// }
+
 		&--current {
 			color: $colorAkcent;
 		}
@@ -432,14 +411,7 @@
 		}
 	}
 
-	// 			&:not(:last-child) {
-	// 				content: "";
-	// 				display: block;
-	// 				background-color: red;
-	// 				// transform: rotate(90deg);
-	// 				width: 1px;
-	// 				// height: 100%;
-	// 			}
+	//
 	.mobile__icon {
 		fill: $colorSecondaryText;
 
@@ -454,9 +426,8 @@
 		content: "";
 		display: block;
 		border: red;
-		// // transform: rotate(90deg);
+
 		width: 1px;
-		// // 				// height: 100%;
 	}
 }
 
@@ -477,91 +448,88 @@
 		&__linkPages:last-child {
 			margin-right: 0px;
 		}
-	
-	&__container,
-	&__list {
-		display: flex;
-		align-items: center;
-	}
-	&__container {
-		height: 80px;
-	}
 
-	&__list__tabl {
-		display: block;
-	}
-	&__list__tabl {
-		margin-left: 96px;
-	}
-	&__link {
-		margin-right: 87px;
-	}
-	&__contact__tabl {
-		font-family: inherit;
-		font-weight: 500;
-		display: flex;
-		align-items: center;
-		font-style: normal;
-		font-size: 12px;
-		line-height: 1.16;
-		letter-spacing: 0.02em;
-		color: $colorPrimaryText;
-		// padding: 32px 0;
-		transition-property: color;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-		&:hover,
-		&:focus {
-			color: $colorAkcent;
-			outline: none;
+		&__container,
+		&__list {
+			display: flex;
+			align-items: center;
 		}
-	}
-	&__item{
-		margin-right: 50px;
-	
-	}
-	&__item:last-child{
-		margin-right: 0px;
-	
-	}
-	&__item--tab {
-		margin-right: 0px;
-	}
-	// &__item:nth-last-child(2n+1) {
-	// 	margin-right: 0px;
-	// }
-	&--current {
-		color: $colorAkcent;
+		&__container {
+			height: 80px;
+		}
 
-		&::after {
-			position: absolute;
-			bottom: 0;
-			content: "";
+		&__list__tabl {
 			display: block;
-			width: 100%;
-			height: 4px;
-			background-color: $colorAkcent;
-			border-radius: 2px;
+		}
+		&__list__tabl {
+			margin-left: 96px;
+		}
+		&__link {
+			margin-right: 87px;
+		}
+		&__contact__tabl {
+			font-family: inherit;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			font-style: normal;
+			font-size: 12px;
+			line-height: 1.16;
+			letter-spacing: 0.02em;
+			color: $colorPrimaryText;
+
+			transition-property: color;
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+			&:hover,
+			&:focus {
+				color: $colorAkcent;
+				outline: none;
+			}
+		}
+		&__item {
+			margin-right: 50px;
+		}
+		&__item:last-child {
+			margin-right: 0px;
+		}
+		&__item--tab {
+			margin-right: 0px;
+		}
+
+		&--current {
+			color: $colorAkcent;
+
+			&::after {
+				position: absolute;
+				bottom: 0;
+				content: "";
+				display: block;
+				width: 100%;
+				height: 4px;
+				background-color: $colorAkcent;
+				border-radius: 2px;
+			}
+		}
+		&__icon__phone {
+			fill: currentColor;
+			margin-right: 8px;
+			width: 10px;
+			height: 14px;
+		}
+		&__icon__email {
+			fill: currentColor;
+			margin-right: 8px;
+			width: 14px;
+			height: 10px;
+		}
+		&__nav {
+			padding: 21px 0;
+			height: 79;
 		}
 	}
-	&__icon__phone {
-		fill: currentColor;
-		margin-right: 8px;
-		width: 10px; 
-		height: 14px;
-	}
-	&__icon__email {
-		fill: currentColor;
-		margin-right: 8px;
-		width: 14px; 
-		height: 10px;
-	}
-	&__nav {
-		padding: 21px 0;
-		height: 79;
-	}
-}}
+}
 .header__contact__tabl__email {
 	margin-bottom: 10px;
 	font-family: inherit;
@@ -573,7 +541,7 @@
 	line-height: 1.16;
 	letter-spacing: 0.02em;
 	color: $colorPrimaryText;
-	// padding: 32px 0;
+
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -662,9 +630,8 @@
 		}
 		&__item:not(:last-child) {
 			margin-right: 50px;
-		
 		}
-		
+
 		.header__contact__tabl {
 			padding: 32px 0;
 		}
@@ -685,13 +652,13 @@
 		&__icon__phone {
 			fill: currentColor;
 			margin-right: 8px;
-			width: 10px; 
+			width: 10px;
 			height: 16px;
 		}
 		&__icon__email {
 			fill: currentColor;
 			margin-right: 8px;
-			width: 16px; 
+			width: 16px;
 			height: 12px;
 		}
 	}
